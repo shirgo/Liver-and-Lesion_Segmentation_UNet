@@ -53,7 +53,7 @@ A CRF provides a class prediction for a pixel considering the pixel label as wel
 - Using CRF, a smoothed version of the input was recieved. That means that certain spikes or very small contours of a certain label are vanished and yield a cleaner result. That fits medical tasks such as organ segmentation, which usually does not include sharp spikes or very small elements that are only a few pixels wide.
 
 
-
+## References 
 [1] O. Ronneberger, P. Fischer, T. Brox, "U-net: Convolutional networks for biomedical image segmentation", Proc. Int. Conf. Medical Image Comput. Comput.-Assisted Intervention, pp. 234-
 241, 2015.
 
