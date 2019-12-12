@@ -24,7 +24,7 @@ All the models we implemented are based on the U-net [1] architecture and were t
 scratch, without any pre-training procedure.
 
 1. End-to-end model based on a single slice
-- In order to segment both the liver and the lesions we used two channels in the output, which represent a one-hot-encoding of the two classes. This way, one channel contains liver segments with lesion “holes” and one channel contains lesions segments only.
+- In order to segment both the liver and the lesions two channels were used in the output, which represent a one-hot-encoding of the two classes. This way, one channel contains liver segments with lesion “holes” and one channel contains lesions segments only.
 - The training strategy relies on the use of data augmentation to use the available annotated samples more efficiently, as the amount of available data was small.
 - The augmentation parameters were chosen to create reasonable augmented images which do not exceed the slice borders:
   Rotation range: 4
