@@ -20,7 +20,7 @@ Download the data from the following link: https://drive.google.com/file/d/1lhYd
 
 
 ## Models Architecture
-All the models we implemented are based on the U-net [1] architecture and were trained from
+All the models were implemented are based on the U-net [1] architecture and were trained from
 scratch, without any pre-training procedure.
 
 1. End-to-end model based on a single slice
@@ -47,18 +47,15 @@ information from z-axis.
 convolution over the three slices, and the next layer behave similarly to the single-slice network.
 
 ## Post processing
-- In order to refine and improve the network output we used CRF.
+- In order to refine and improve the network output CRF was used.
 - CRF is a conditional random field is a discriminative statistical modelling method that is used when the class labels for different inputs are not independent. For image
 segmentation, the class label for each pixel depends on the label of its neighboring pixels.
 A CRF provides a class prediction for a pixel considering the pixel label as well as the labels of all pixels which are defined as neighbors of the pixel.
-- Using CRF, we received a smoothed version of the input as the output. That means that certain spikes or very small contours of a certain label are vanished and yield a cleaner result. That fits medical tasks such as organ segmentation, which usually does not include sharp spikes or very small elements that are only a few pixels wide.
+- Using CRF, a smoothed version of the input was recieved. That means that certain spikes or very small contours of a certain label are vanished and yield a cleaner result. That fits medical tasks such as organ segmentation, which usually does not include sharp spikes or very small elements that are only a few pixels wide.
 
 
 
-[1] O. Ronneberger, P. Fischer, T. Brox, "U-net: Convolutional networks for biomedical image
-segmentation", Proc. Int. Conf. Medical Image Comput. Comput.-Assisted Intervention, pp. 234-
+[1] O. Ronneberger, P. Fischer, T. Brox, "U-net: Convolutional networks for biomedical image segmentation", Proc. Int. Conf. Medical Image Comput. Comput.-Assisted Intervention, pp. 234-
 241, 2015.
 
-[2] Ben-Cohen A, Diamant I, Klang E, Amitai M, Greenspan H (2016) Fully convolutional network
-for liver segmentation and lesions detection. In: Proceedings of the international workshop on
-large-scale annotation of biomedical data and expert label synthesis. Springer, pp 77–85.
+[2] Ben-Cohen A, Diamant I, Klang E, Amitai M, Greenspan H (2016) Fully convolutional network for liver segmentation and lesions detection. In: Proceedings of the international workshop on large-scale annotation of biomedical data and expert label synthesis. Springer, pp 77–85.
