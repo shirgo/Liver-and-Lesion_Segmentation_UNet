@@ -7,12 +7,16 @@ The project consists of the following tasks:
 2. Lesions segmentation
 
 The training data set consists of 11 CT scans:
+
 • ‘Data’ directory contains CT images converted to ‘png’ format
+
 • ‘Segmentation’ directory contains segmentation masks:
+
 – Pixels with value 127 indicate liver
+
 – Pixels with value 255 indicate liver lesion
-Download the data from the following link:
-https://drive.google.com/file/d/1lhYdOFymZSC5Gz76Zt4GzcDYc8nWaWJv/view
+
+Download the data from the following link: https://drive.google.com/file/d/1lhYdOFymZSC5Gz76Zt4GzcDYc8nWaWJv/view
 
 
 ## Models Architecture
