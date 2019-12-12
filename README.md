@@ -33,7 +33,7 @@ scratch, without any pre-training procedure.
   Zoom range: 0.05
 
 2. Two-steps model based on a single slice
-- As part of our experiments, we tried to split the model into two separate U-net networks, where each network performs one step of the task.
+- A test to split the model into two separate U-net networks was made. In this case, each network performs one step of the task.
 
 - The first network was trained to segment the full liver out of a CT image, and the second network was trained to segment a lesion from an image which contain
 only the liver itself.
