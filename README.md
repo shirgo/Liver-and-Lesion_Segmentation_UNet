@@ -20,8 +20,7 @@ Download the data from the following link: https://drive.google.com/file/d/1lhYd
 
 
 ## Models Architecture
-All the models were implemented are based on the U-net [1] architecture and were trained from
-scratch, without any pre-training procedure.
+All the models that were implemented are based on the U-net [1] architecture and were trained from scratch, without any pre-training procedure.
 
 1. End-to-end model based on a single slice
 - In order to segment both the liver and the lesions two channels were used in the output, which represent a one-hot-encoding of the two classes. This way, one channel contains liver segments with lesion “holes” and one channel contains lesions segments only.
